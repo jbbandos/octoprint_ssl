@@ -1,3 +1,5 @@
+. ./settings.env
+
 if [ "$OCTOPRINT_SSL_PROVIDER" = "certbot" ]; then
     cat > /root/.secrets/cloudflare.cfg <<EOF
 dns_cloudflare_api_token = "$OCTOPRINT_SSL_CERTBOT_CLOUDFLARE_API_TOKEN"
