@@ -1,3 +1,5 @@
+. ./settings.env
+
 mkdir -p /opt/ssl
 
 if ! command -v sed &> /dev/null
@@ -17,7 +19,7 @@ if [ "$OCTOPRINT_SSL_PROVIDER" = "certbot-cloudflare-dns" ]; then
 fi
 
 # generate certificate
-./generate.sh
+./scripts/generate.sh
 
 # set haproxy stuff
 cp /etc/haproxy/haproxy.cfg /etc/haproxy/haproxy.cfg.bak
