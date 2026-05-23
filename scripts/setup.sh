@@ -9,7 +9,7 @@ fi
 
 # install required software
 if [ "$OCTOPRINT_SSL_PROVIDER" = "certbot-cloudflare-dns" ]; then
-    apt-get install -y software-properties-common python-certbot-nginx python-pip
+    apt-get install -y software-properties-common python3-pip
     pip3 install certbot-dns-cloudflare
 
     mkdir /root/.secrets
