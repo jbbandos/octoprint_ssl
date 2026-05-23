@@ -5,7 +5,7 @@ then
 fi
 
 # get latest version (no the best to run at, root... YOLO)
-/usr/bin/git clone --depth 1 https://github.com/kpalatzky/octoprint_ssl /opt/octoprint_ssl
+/usr/bin/git clone --depth 1 https://github.com/jbbandos/octoprint_ssl /opt/octoprint_ssl
 
 cd /opt/octoprint_ssl
 cp ./settings_template.env settings.env
